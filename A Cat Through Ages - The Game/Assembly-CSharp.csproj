@@ -108,6 +108,10 @@
     <Compile Include="Assets\GreenForest\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
     <Compile Include="Assets\Lowpoly Toon Cat Lite\Demo\Cat_Lite_Demo.cs" />
     <Compile Include="Assets\Scripts\Character.cs" />
+    <Compile Include="Assets\Scripts\GAME3_Bear2Anim.cs" />
+    <Compile Include="Assets\Scripts\GAME3_Bear3Anim.cs" />
+    <Compile Include="Assets\Scripts\GAME3_BearAnim.cs" />
+    <Compile Include="Assets\Scripts\GAME3_BearMovement.cs" />
     <Compile Include="Assets\Scripts\GAME3_CameraFollow.cs" />
     <Compile Include="Assets\Scripts\GAME3_PlayerAnim.cs" />
     <Compile Include="Assets\Scripts\GAME3_PlayerMovement.cs" />

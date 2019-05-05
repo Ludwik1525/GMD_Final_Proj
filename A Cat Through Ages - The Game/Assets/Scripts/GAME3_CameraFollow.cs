@@ -7,6 +7,13 @@ public class GAME3_CameraFollow : MonoBehaviour {
     public GameObject player;
     private bool flatMode = false;
 
+    private GameObject[] movables;
+
+    void Start()
+    {
+        movables = GameObject.FindGameObjectsWithTag("Movable");
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.F))
@@ -15,12 +22,20 @@ public class GAME3_CameraFollow : MonoBehaviour {
             {
                 player.transform.Rotate(-45, 0,0);
                 this.gameObject.transform.Rotate(-35,0,0);
+                foreach (var movable in movables)
+                {
+                    movable.transform.Rotate(-45, 0, 0);
+                }
                 flatMode = true;
             }
             else
             {
                 player.transform.Rotate(45, 0, 0);
                 this.gameObject.transform.Rotate(35, 0, 0);
+                foreach (var movable in movables)
+                {
+                    movable.transform.Rotate(45, 0, 0);
+                }
                 flatMode = false;
             }
         }
