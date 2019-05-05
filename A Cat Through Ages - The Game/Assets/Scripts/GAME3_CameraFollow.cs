@@ -6,6 +6,7 @@ public class GAME3_CameraFollow : MonoBehaviour {
 
     public GameObject player;
     private bool flatMode = false;
+    private bool rotated = false;
 
     private GameObject[] bears;
     private GameObject[] kittens;
@@ -53,7 +54,7 @@ public class GAME3_CameraFollow : MonoBehaviour {
 
     void LateUpdate()
     {
-        if(!flatMode) transform.position = player.transform.position + new Vector3(0, -20, -20);
-        else transform.position = player.transform.position + new Vector3(0, -20, -10);
+        if(!flatMode) transform.position = player.transform.position + new Vector3(0, -30, -20);
+        else transform.position = player.transform.position + new Vector3(0, -30, -10);
     }
 }
