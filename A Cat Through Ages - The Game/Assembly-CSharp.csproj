@@ -109,6 +109,7 @@
     <Compile Include="Assets\Lowpoly Toon Cat Lite\Demo\Cat_Lite_Demo.cs" />
     <Compile Include="Assets\Scripts\Character.cs" />
     <Compile Include="Assets\Scripts\GAME3_CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\GAME3_PlayerAnim.cs" />
     <Compile Include="Assets\Scripts\GAME3_PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\IConsume.cs" />
     <Compile Include="Assets\Scripts\IHealth.cs" />
