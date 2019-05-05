@@ -6,15 +6,12 @@ public class GAME3_CameraFollow : MonoBehaviour {
 
     public GameObject player;
     private bool flatMode = false;
-    private bool rotated = false;
 
-    private GameObject[] bears;
-    private GameObject[] kittens;
+    private GameObject[] movables;
 
     void Start()
     {
-        kittens = GameObject.FindGameObjectsWithTag("Kitten");
-        bears = GameObject.FindGameObjectsWithTag("Bear");
+        movables = GameObject.FindGameObjectsWithTag("Movable");
     }
 
     void Update()
@@ -25,13 +22,9 @@ public class GAME3_CameraFollow : MonoBehaviour {
             {
                 player.transform.Rotate(-45, 0,0);
                 this.gameObject.transform.Rotate(-35,0,0);
-                foreach (var bear in bears)
+                foreach (var movable in movables)
                 {
-                    bear.transform.Rotate(-45, 0, 0);
-                }
-                foreach (var kitten in kittens)
-                {
-                    kitten.transform.Rotate(-45, 0, 0);
+                    movable.transform.Rotate(-45, 0, 0);
                 }
                 flatMode = true;
             }
@@ -39,13 +32,9 @@ public class GAME3_CameraFollow : MonoBehaviour {
             {
                 player.transform.Rotate(45, 0, 0);
                 this.gameObject.transform.Rotate(35, 0, 0);
-                foreach (var bear in bears)
+                foreach (var movable in movables)
                 {
-                    bear.transform.Rotate(45, 0, 0);
-                }
-                foreach (var kitten in kittens)
-                {
-                    kitten.transform.Rotate(45, 0, 0);
+                    movable.transform.Rotate(45, 0, 0);
                 }
                 flatMode = false;
             }
@@ -54,7 +43,7 @@ public class GAME3_CameraFollow : MonoBehaviour {
 
     void LateUpdate()
     {
-        if(!flatMode) transform.position = player.transform.position + new Vector3(0, -30, -20);
-        else transform.position = player.transform.position + new Vector3(0, -30, -10);
+        if(!flatMode) transform.position = player.transform.position + new Vector3(0, -20, -20);
+        else transform.position = player.transform.position + new Vector3(0, -20, -10);
     }
 }
