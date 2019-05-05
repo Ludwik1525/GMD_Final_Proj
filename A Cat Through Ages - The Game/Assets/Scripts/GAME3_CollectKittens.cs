@@ -9,7 +9,6 @@ public class GAME3_CollectKittens : MonoBehaviour {
 
     public AudioClip collect;
     public AudioClip bearAttack;
-    public AudioClip success;
     public AudioSource source;
     public Text current;
     private int counter = 0;
