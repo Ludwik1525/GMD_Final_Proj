@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Bear
   - Movable
+  - Kitten
   layers:
   - Default
   - TransparentFX

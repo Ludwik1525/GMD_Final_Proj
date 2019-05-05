@@ -7,11 +7,13 @@ public class GAME3_CameraFollow : MonoBehaviour {
     public GameObject player;
     private bool flatMode = false;
 
-    private GameObject[] movables;
+    private GameObject[] bears;
+    private GameObject[] kittens;
 
     void Start()
     {
-        movables = GameObject.FindGameObjectsWithTag("Movable");
+        kittens = GameObject.FindGameObjectsWithTag("Kitten");
+        bears = GameObject.FindGameObjectsWithTag("Bear");
     }
 
     void Update()
@@ -22,9 +24,13 @@ public class GAME3_CameraFollow : MonoBehaviour {
             {
                 player.transform.Rotate(-45, 0,0);
                 this.gameObject.transform.Rotate(-35,0,0);
-                foreach (var movable in movables)
+                foreach (var bear in bears)
                 {
-                    movable.transform.Rotate(-45, 0, 0);
+                    bear.transform.Rotate(-45, 0, 0);
+                }
+                foreach (var kitten in kittens)
+                {
+                    kitten.transform.Rotate(-45, 0, 0);
                 }
                 flatMode = true;
             }
@@ -32,9 +38,13 @@ public class GAME3_CameraFollow : MonoBehaviour {
             {
                 player.transform.Rotate(45, 0, 0);
                 this.gameObject.transform.Rotate(35, 0, 0);
-                foreach (var movable in movables)
+                foreach (var bear in bears)
                 {
-                    movable.transform.Rotate(45, 0, 0);
+                    bear.transform.Rotate(45, 0, 0);
+                }
+                foreach (var kitten in kittens)
+                {
+                    kitten.transform.Rotate(45, 0, 0);
                 }
                 flatMode = false;
             }
