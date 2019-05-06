@@ -23,6 +23,16 @@ void Update()
     Vector3 movement = velocity * Time.fixedDeltaTime;
 
     rb.MovePosition(rb.position + movement);
+
+    if (!Input.anyKey)
+    {
+        rb.constraints = RigidbodyConstraints.FreezeAll;
+    }
+    else
+    {
+        rb.constraints = RigidbodyConstraints.None;
+        rb.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionZ;
+    }
     }
 }
 
