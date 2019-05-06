@@ -70,7 +70,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 492}
   m_MaxSize: {x: 10004, y: 14042}
   vertical: 1
-  controlID: 122
+  controlID: 79
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 121
+  controlID: 78
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -183,7 +183,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 82
+  controlID: 11
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -685,7 +685,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Low_poly_styled_rocks/Assets/Materials
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
@@ -697,7 +697,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 802b0000
     m_LastClickedID: 11136
-    m_ExpandedIDs: 00000000c22c00004c30000006310000de340000f036000024390000163a00006e3d00008a6300008c6300008e630000
+    m_ExpandedIDs: 00000000c22c00004c30000006310000de340000f036000024390000163a00006e3d0000a2630000a4630000a6630000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -725,7 +725,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000c22c00004c30000006310000de340000f036000024390000163a00006e3d00008a6300008c6300008e630000
+    m_ExpandedIDs: ffffffff00000000c22c0000cc2d00004c30000006310000de340000f036000024390000163a00006e3d000038550000a2630000a4630000a6630000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -885,14 +885,14 @@ MonoBehaviour:
     height: 341
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 1867.5630088999999
+  lastFramingTime: 117.5326425
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -79.62591, y: -83.36047, z: -179.9791}
+    m_Target: {x: -309.06873, y: -293.72092, z: 30.12956}
     speed: 2
-    m_Value: {x: -79.62591, y: -83.36047, z: -179.9791}
+    m_Value: {x: -309.06873, y: -293.72092, z: 30.12956}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -920,13 +920,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.1946733, y: 0.049704798, z: 0.009878044, w: -0.9795581}
+    m_Target: {x: 0.16393638, y: -0.00029734123, z: -0.000049500442, w: -0.9864709}
     speed: 2
-    m_Value: {x: 0.19467331, y: 0.0497048, z: 0.009878045, w: -0.97955817}
+    m_Value: {x: 0.16393638, y: -0.00029734123, z: -0.000049500442, w: -0.9864709}
   m_Size:
-    m_Target: 478.80283
+    m_Target: 152.39897
     speed: 2
-    m_Value: 478.80283
+    m_Value: 152.39897
   m_Ortho:
     m_Target: 0
     speed: 2
