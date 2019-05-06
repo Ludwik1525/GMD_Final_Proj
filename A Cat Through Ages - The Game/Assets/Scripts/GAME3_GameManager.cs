@@ -10,18 +10,22 @@ public class GAME3_GameManager : MonoBehaviour
     public GameObject startObject;
     public GameObject endObject;
     public GameObject pauseObject;
+    public GameObject coolstory;
 
+    public Button nextButton;
     public Button startButton;
     public Button endButton;
     public Button resumeButton;
     public Button goToMenuButton;
 	
 	void Start () {
-		startObject.SetActive(true);
+        coolstory.SetActive(true);
+		startObject.SetActive(false);
         endObject.SetActive(false);
         pauseObject.SetActive(false);
         Time.timeScale = 0;
 
+        nextButton.onClick.AddListener(Next);
         startButton.onClick.AddListener(StartGame);
         endButton.onClick.AddListener(EndGame);
         resumeButton.onClick.AddListener(Resume);
@@ -45,7 +49,7 @@ public class GAME3_GameManager : MonoBehaviour
 
     void EndGame()
     {
-        SceneManager.LoadScene("Cutscene");
+        SceneManager.LoadScene("Game4");
     }
 
     public void SetEndObject()
@@ -61,8 +65,14 @@ public class GAME3_GameManager : MonoBehaviour
         GameObject.FindGameObjectWithTag("MainCamera").GetComponent<AudioSource>().volume = 1f;
     }
 
+    void Next()
+    {
+        coolstory.SetActive(false);
+        startObject.SetActive(true);
+    }
+
     void GoToMenu()
     {
-
+        SceneManager.LoadScene("Menu");
     }
 }

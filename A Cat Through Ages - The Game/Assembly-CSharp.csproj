@@ -110,7 +110,6 @@
     <Compile Include="Assets\Models\poisondartfrog\ToxicFrogs\FrogController.cs" />
     <Compile Include="Assets\Models\poisondartfrog\ToxicFrogs\RotateCamFrog.cs" />
     <Compile Include="Assets\Scripts\Character.cs" />
-    <Compile Include="Assets\Scripts\CutscenesManager.cs" />
     <Compile Include="Assets\Scripts\GAME3_Bear2Anim.cs" />
     <Compile Include="Assets\Scripts\GAME3_Bear3Anim.cs" />
     <Compile Include="Assets\Scripts\GAME3_BearAnim.cs" />
