@@ -6,6 +6,7 @@ public class GAME3_BearMovement : MonoBehaviour
 {
 
     private Vector3 temp;
+    public int randomNumber;
 
     void Start ()
     {
@@ -21,7 +22,7 @@ public class GAME3_BearMovement : MonoBehaviour
 
     void SetRandomPos()
         {
-        temp = new Vector3(Random.Range(-300f, 250f), Random.Range(300f, -100f), 26.6f);
+        temp = new Vector3(Random.Range(-300+randomNumber, 250-randomNumber), Random.Range(300+randomNumber, -100-randomNumber), 26.6f);
         }
 
         public IEnumerator Move()
@@ -29,7 +30,7 @@ public class GAME3_BearMovement : MonoBehaviour
             while (true)
             {
                 SetRandomPos();
-                yield return new WaitForSeconds(1);
+                yield return new WaitForSeconds(randomNumber);
             }
         }
 }
