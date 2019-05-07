@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-using Vuforia;
+//using Vuforia;
 using Object = System.Object;
 
 public class MoveCar : MonoBehaviour, IMove
