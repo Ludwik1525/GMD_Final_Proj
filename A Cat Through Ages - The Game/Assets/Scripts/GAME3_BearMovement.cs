@@ -7,25 +7,22 @@ public class GAME3_BearMovement : MonoBehaviour
 
     private Vector3 temp;
     public int randomNumber;
-    private Rigidbody rb;
 
     void Start ()
     {
         temp = transform.position;
         StartCoroutine("Move");
-        rb = GetComponent<Rigidbody>();
     }
 
     void Update()
     {
-        //rb.AddForce(temp * randomNumber);
-        //transform.position = Vector3.MoveTowards(transform.position, temp, 0.1f);
+        transform.position = Vector3.MoveTowards(transform.position, temp, 0.1f);
 
     }
 
     void SetRandomPos()
         {
-        temp = new Vector3(Random.Range(-30+randomNumber, 25-randomNumber), Random.Range(30+randomNumber, -10-randomNumber), 26.6f);
+        temp = new Vector3(Random.Range(-300+randomNumber, 250-randomNumber), Random.Range(300+randomNumber, -100-randomNumber), 26.6f);
         }
 
         public IEnumerator Move()

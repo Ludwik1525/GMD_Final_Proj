@@ -3,6 +3,9 @@ Fifth and the last project for Game Development course. <br/>
 <I'M A GAME DESCRIPTION PLACEHOLDER>.<br/>
 Everything is done in Unity and uses C# for scripting.
 
+[Start Menu]
+Fantasy Wooden GUI : Free - BLACK HAMMER
+
 [Game 4 Assets]
 Toxic Frogs - RYO ARAI
 Living Birds - DINOPUNCH
