@@ -16,8 +16,6 @@ public class MoveCar : MonoBehaviour, IMove
 
     private NavMeshAgent navMeshAgent;
 
-    public event Action<Input> OnPlayerInput;
-
     // Use this for initialization
     void Start ()
     {
@@ -70,10 +68,5 @@ public class MoveCar : MonoBehaviour, IMove
     public void Move()
     {
         StartCoroutine(MoveTo(returnAfter));
-    }
-
-    public void Jump()
-    {
-        throw new NotImplementedException();
     }
 }

@@ -20,7 +20,6 @@ public class Player2DMovement : MonoBehaviour {
     void Start()
     {
         player = GetComponent<Rigidbody2D>();
-        jumpHeight = 10f;
     }
 
     void FixedUpdate()
