@@ -525,7 +525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startButton: {fileID: 1888280021}
-  catMeow: {fileID: 8300000, guid: 72cd4707ac5f9cb458a469ec26c1c2a7, type: 3}
+  catMeow: {fileID: 8300000, guid: 09f170b1208864049af3f4e03f7d4e93, type: 3}
 --- !u!82 &1873367125
 AudioSource:
   m_ObjectHideFlags: 0
