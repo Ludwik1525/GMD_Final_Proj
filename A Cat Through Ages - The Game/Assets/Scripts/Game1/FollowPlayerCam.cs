@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class FollowPlayerCam : MonoBehaviour {
 
-    public GameObject player;       //Public variable to store a reference to the player game object
+    public GameObject player;
+    public Transform target, leftBound, rightBounds;
+
+    private float camWidth, camHeight, levelMaxX;
 
 
-    private Vector3 offset;         //Private variable to store the offset distance between the player and camera
+    private Vector3 offset;        
 
-    // Use this for initialization
+    
     void Start()
     {
-        //Calculate and store the offset value by getting the distance between the player's position and camera's position.
+
+        camWidth = Camera.main.orthographicSize * 2;
+        camWidth = camHeight * Camera.main.aspect;
+
+        
         offset = transform.position - player.transform.position;
     }
 
@@ -20,6 +27,14 @@ public class FollowPlayerCam : MonoBehaviour {
     void LateUpdate()
     {
         // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
-        transform.position = player.transform.position + offset;
+        if(player.transform.position.y < -0.5f)
+        {
+            transform.position = new Vector3(player.transform.position.x + offset.x, -1.16f, -10);
+
+        }
+        if(player.transform.position.y > 0)
+        {
+            transform.position = new Vector3(player.transform.position.x + offset.x, 1.27f, -10);
+        }
     }
 }
