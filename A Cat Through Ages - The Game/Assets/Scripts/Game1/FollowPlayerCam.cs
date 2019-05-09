@@ -16,7 +16,7 @@ public class FollowPlayerCam : MonoBehaviour {
     void Start()
     {
 
-        camWidth = Camera.main.orthographicSize * 2;
+        camHeight = Camera.main.orthographicSize * 2;
         camWidth = camHeight * Camera.main.aspect;
 
         
@@ -27,7 +27,7 @@ public class FollowPlayerCam : MonoBehaviour {
     void LateUpdate()
     {
         // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
-        if(player.transform.position.y < -0.3f)
+        if(player.transform.position.y < camHeight)
         {
             transform.position = new Vector3(player.transform.position.x + offset.x, -1.16f, -10);
 

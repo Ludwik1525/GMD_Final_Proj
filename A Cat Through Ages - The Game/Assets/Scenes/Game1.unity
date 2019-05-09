@@ -7481,11 +7481,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4892323254953282, guid: 7f3c3cd728668e3458b886e7175c1311, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -17.622
+      value: -18.63
       objectReference: {fileID: 0}
     - target: {fileID: 4892323254953282, guid: 7f3c3cd728668e3458b886e7175c1311, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.057
+      value: 1.89
       objectReference: {fileID: 0}
     - target: {fileID: 4892323254953282, guid: 7f3c3cd728668e3458b886e7175c1311, type: 2}
       propertyPath: m_LocalPosition.z
@@ -7497,7 +7497,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4892323254953282, guid: 7f3c3cd728668e3458b886e7175c1311, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4892323254953282, guid: 7f3c3cd728668e3458b886e7175c1311, type: 2}
       propertyPath: m_LocalRotation.z
@@ -7505,7 +7505,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4892323254953282, guid: 7f3c3cd728668e3458b886e7175c1311, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4892323254953282, guid: 7f3c3cd728668e3458b886e7175c1311, type: 2}
       propertyPath: m_RootOrder
@@ -7514,6 +7514,15 @@ Prefab:
     - target: {fileID: 1050492007925532, guid: 7f3c3cd728668e3458b886e7175c1311, type: 2}
       propertyPath: m_Name
       value: Boar
+      objectReference: {fileID: 0}
+    - target: {fileID: 114727283396426160, guid: 7f3c3cd728668e3458b886e7175c1311,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4892323254953282, guid: 7f3c3cd728668e3458b886e7175c1311, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f3c3cd728668e3458b886e7175c1311, type: 2}
