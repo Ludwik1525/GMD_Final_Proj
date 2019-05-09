@@ -7,17 +7,7 @@ public class InitialisationScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
-        if (EnemyKilled.OnEnemyKilledEvent == null)
-        {
-            EnemyKilled.OnEnemyKilledEvent = new UnityEvent();
-        }
-
-        if (Kill.LoseEvent == null)
-        {
-            Kill.LoseEvent = new UnityEvent();
-        }
-
+        
         Time.timeScale = 0;
     }
 }

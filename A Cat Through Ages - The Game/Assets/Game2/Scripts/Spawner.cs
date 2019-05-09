@@ -11,6 +11,7 @@ public class Spawner : MonoBehaviour
     public Transform[] Locations1, Locations2;
 
     private bool _spawn1;
+    private int _dif = 1;
 
     private IEnumerator _spawnRoutine;
 	// Use this for initialization
@@ -19,6 +20,7 @@ public class Spawner : MonoBehaviour
         _spawn1 = true;
         _spawnRoutine = SpawnRoutine();
         StartCoroutine(_spawnRoutine);
+        ScoreScript.DifficultyEvent.AddListener(DifIncrease);
     }
 
     private void Spawn()
@@ -42,7 +44,20 @@ public class Spawner : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(1);
-            Spawn();
+            for (int i = 0; i < _dif; i++)
+            {
+                Spawn();
+            }
         }
+    }
+
+    void DifIncrease()
+    {
+        _dif++;
+    }
+
+    void OnDestroy()
+    {
+        ScoreScript.DifficultyEvent.RemoveListener(DifIncrease);
     }
 }

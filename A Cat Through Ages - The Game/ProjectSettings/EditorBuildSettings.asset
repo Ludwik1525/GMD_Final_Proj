@@ -5,25 +5,28 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Game1.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 0
-    path: Assets/Scenes/Game4/Game4.unity
-    guid: 6a6d2b04edd2911498a2c40e36db413d
-  - enabled: 0
-    path: Assets/Scenes/Game4/Lose Scene - Car Accidence.unity
-    guid: 059c026b252f01345937ed7f4a3ec77a
-  - enabled: 0
-    path: Assets/Scenes/Game4/Lose Scene - Human Hurt.unity
-    guid: 0d9487c800b8dab49a74933a655d4050
-  - enabled: 0
-    path: Assets/Scenes/Game4/Lose Scene - Starvation.unity
-    guid: 6d11d328a809c8e49a59446033e0fe64
-  - enabled: 0
-    path: Assets/Scenes/Game4/Win Scene - Game4.unity
-    guid: 04b628fab96b1ef4da124e0a28f9e31d
   - enabled: 1
     path: Assets/Scenes/Game2.unity
     guid: 404008c7f626fe54b8b58faaae2654d7
+  - enabled: 1
+    path: Assets/Scenes/Game3.unity
+    guid: 4eb52c0dadc677d4a9552bbaafbeeae2
+  - enabled: 1
+    path: Assets/Scenes/Game4/Game4.unity
+    guid: 6a6d2b04edd2911498a2c40e36db413d
+  - enabled: 1
+    path: Assets/Scenes/Game4/Lose Scene - Car Accidence.unity
+    guid: 059c026b252f01345937ed7f4a3ec77a
+  - enabled: 1
+    path: Assets/Scenes/Game4/Lose Scene - Human Hurt.unity
+    guid: 0d9487c800b8dab49a74933a655d4050
+  - enabled: 1
+    path: Assets/Scenes/Game4/Lose Scene - Starvation.unity
+    guid: 6d11d328a809c8e49a59446033e0fe64
+  - enabled: 1
+    path: Assets/Scenes/Game4/Win Scene - Game4.unity
+    guid: 04b628fab96b1ef4da124e0a28f9e31d
   m_configObjects: {}
