@@ -8,23 +8,15 @@ public class MoveCat : MonoBehaviour, IMove {
 
     public Rigidbody rb;
 
-    public float movementSpeed;
-    public float rotationSpeed;
-    public float rotationDegrees;
-    public float runningSpeed;
-    public float backwardsSpeed;
+    public float movementSpeed = 0.2f;
+    public float rotationSpeed = 50f;
+    public float rotationDegrees = 1f;
+    public float runningSpeed = 1f;
+    public float backwardsSpeed = 1f;
     private Animator animator;
-
-    private string dataInJson;
-
-    private MovingSpeed speed;
 
     void Start()
     {
-        speed = new MovingSpeed();
-        LoadFile("Assets/Json/config.JSON");
-
-
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
         animator.SetBool("run",false);
@@ -35,9 +27,6 @@ public class MoveCat : MonoBehaviour, IMove {
     void Update()
     {
             Move();
-    
-
-        SaveFile("Assets/Json/config.JSON");
         
     }
 
@@ -143,27 +132,5 @@ public class MoveCat : MonoBehaviour, IMove {
         
     }
 
-    public void LoadFile(string path)
-    {
-        dataInJson = File.ReadAllText("Assets/Json/config.JSON");
-        speed = JsonUtility.FromJson<MovingSpeed>(dataInJson);
-
-        movementSpeed = speed.movementSpeed;
-        rotationSpeed = speed.rotationSpeed;
-        rotationDegrees = speed.rotationDegrees;
-        runningSpeed = speed.runningSpeed;
-        backwardsSpeed = speed.backwardsSpeed;
-    }
-
-    public void SaveFile(string path)
-    {
-        speed.movementSpeed = movementSpeed;
-        speed.rotationSpeed = rotationSpeed;
-        speed.rotationDegrees = rotationDegrees;
-        speed.runningSpeed = runningSpeed;
-        speed.backwardsSpeed = backwardsSpeed;
-
-        dataInJson = JsonUtility.ToJson(speed, false);
-        File.WriteAllText(path, dataInJson);
-    }
+  
 }
