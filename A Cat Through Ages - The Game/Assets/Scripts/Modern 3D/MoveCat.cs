@@ -9,10 +9,10 @@ public class MoveCat : MonoBehaviour, IMove {
     public Rigidbody rb;
 
     public float movementSpeed = 0.2f;
-    public float rotationSpeed = 50f;
-    public float rotationDegrees = 1f;
-    public float runningSpeed = 1f;
-    public float backwardsSpeed = 1f;
+    public float rotationSpeed = 1f;
+    public float rotationDegrees = 90f;
+    public float runningSpeed = 0.5f;
+    public float backwardsSpeed = 0.2f;
     private Animator animator;
 
     void Start()

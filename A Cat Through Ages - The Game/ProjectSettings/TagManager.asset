@@ -7,6 +7,14 @@ TagManager:
   - Bear
   - Movable
   - Kitten
+  - Enemy
+  - FrontalAttack
+  - Ground
+  - AICars
+  - bird
+  - frog
+  - Cat
+  - HiddenBlock
   layers:
   - Default
   - TransparentFX
