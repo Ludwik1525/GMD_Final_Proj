@@ -5,10 +5,10 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameManager_Game1 : MonoBehaviour {
-    public GameObject pauseScreen,sliders,introStory;
+    public GameObject pauseScreen,introStory;
     private bool paused = false;
-    public Button menu, resume;
-    public Slider musicSlider, genSoundSlider, masterVolume;
+    public Button resume;
+   
     
 
     private Scene scene;
@@ -50,8 +50,6 @@ public class GameManager_Game1 : MonoBehaviour {
     void Resume()
     {
         pauseScreen.SetActive(false);
-        //sliders.SetActive(false);
-        //menu.gameObject.SetActive(false);
         paused = false;
         Time.timeScale = 1.0f;
 

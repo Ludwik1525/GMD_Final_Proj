@@ -128,7 +128,6 @@
     <Compile Include="Assets\Models\poisondartfrog\ToxicFrogs\RotateCamFrog.cs" />
     <Compile Include="Assets\Scripts\Character.cs" />
     <Compile Include="Assets\Scripts\Game1\AnimationControl.cs" />
-    <Compile Include="Assets\Scripts\Game1\CollisionManager.cs" />
     <Compile Include="Assets\Scripts\Game1\CrumblingPlatform.cs" />
     <Compile Include="Assets\Scripts\Game1\EnemyMovement.cs" />
     <Compile Include="Assets\Scripts\Game1\ExitScript.cs" />

@@ -29,4 +29,35 @@ public class StandardHealth : MonoBehaviour, IHealth {
         OnDied();
         GameObject.Destroy(this.gameObject);
     }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+
+        if (other.collider.gameObject.tag == "FrontalAttack")
+        {
+            AdjustHealth(1);
+        }
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.name == "FallingDeath")
+        {
+            AdjustHealth(1);
+        }
+        if (other.gameObject.tag == "Enemy")
+        {
+            Destroy(other.gameObject);
+        }
+        if (other.gameObject.tag == "Finish")
+        {
+
+            gameObject.GetComponent<PlayerMovementGame1>().enabled = false;
+            //anim.Play("GoUp");
+
+
+
+        }
+    }
 }
