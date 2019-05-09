@@ -8,6 +8,7 @@ public class ScoreManager : MonoBehaviour {
     public Text scoreTxt;
     private int score;
 
+
 	// Use this for initialization
 	void Start () {
         score = 0;
