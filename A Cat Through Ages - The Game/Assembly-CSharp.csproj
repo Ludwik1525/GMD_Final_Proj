@@ -132,6 +132,7 @@
     <Compile Include="Assets\Scripts\Game1\GameManager_Game1.cs" />
     <Compile Include="Assets\Scripts\Game1\JumpSmooth.cs" />
     <Compile Include="Assets\Scripts\Game1\PlayerMovementGame1.cs" />
+    <Compile Include="Assets\Scripts\Game1\ScoreManager.cs" />
     <Compile Include="Assets\Scripts\Game1\SoundManager.cs" />
     <Compile Include="Assets\Scripts\GAME3_Bear2Anim.cs" />
     <Compile Include="Assets\Scripts\GAME3_Bear3Anim.cs" />

@@ -49,6 +49,7 @@ public class StandardHealth : MonoBehaviour, IHealth {
         if (other.gameObject.tag == "Enemy")
         {
             Destroy(other.gameObject);
+            GetComponentInChildren<ScoreManager>().AddPoints();
         }
         if (other.gameObject.tag == "Finish")
         {
