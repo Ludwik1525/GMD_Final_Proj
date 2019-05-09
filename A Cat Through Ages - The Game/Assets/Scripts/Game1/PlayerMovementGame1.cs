@@ -27,13 +27,17 @@ public class PlayerMovementGame1 : MonoBehaviour
     {
         
             move = Input.GetAxis("Horizontal");
+       
+        
+        Move();
+        
+    }
+    private void Update()
+    {
         if (Input.GetButtonDown("Jump") && Grounded)
         {
             playerRgbd.velocity = Vector2.up * jumpVelocity;
         }
-        
-        Move();
-        
     }
 
 
