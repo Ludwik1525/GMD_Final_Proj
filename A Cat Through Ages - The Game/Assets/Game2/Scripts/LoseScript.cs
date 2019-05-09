@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class LoseScript : MonoBehaviour
 {
@@ -29,6 +30,7 @@ public class LoseScript : MonoBehaviour
         Time.timeScale = 0;
         LoseUi.SetActive(true);
         _shooting.enabled = false;
+        SceneManager.LoadScene("Game3");
     }
     
 
