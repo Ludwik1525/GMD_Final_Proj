@@ -49,6 +49,7 @@ public class GAME3_GameManager : MonoBehaviour
 
     void EndGame()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("Game4");
     }
 
