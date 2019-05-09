@@ -17,7 +17,8 @@ public class EnemyMovement : MonoBehaviour {
 	void Update () {
         transform.Translate(Vector2.right * speed * Time.deltaTime);
 
-        RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, 1f);
+        RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, .5f);
+        print(Physics2D.Raycast(groundDetection.position, Vector2.down, 2f).collider.name + "this should be hitting stuff");
         if (groundInfo.collider == false)
         {
             if (moveRight)

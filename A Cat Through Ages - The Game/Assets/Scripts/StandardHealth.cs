@@ -52,8 +52,8 @@ public class StandardHealth : MonoBehaviour, IHealth {
         }
         if (other.gameObject.tag == "Finish")
         {
-
             gameObject.GetComponent<PlayerMovementGame1>().enabled = false;
+            gameObject.GetComponentInChildren<GameManager_Game1>().FinishGame();
             //anim.Play("GoUp");
 
 
