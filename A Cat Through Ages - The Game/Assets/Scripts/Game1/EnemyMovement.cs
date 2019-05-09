@@ -15,10 +15,9 @@ public class EnemyMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Translate(Vector2.right * speed * Time.deltaTime);
+        transform.Translate(Vector2.left * speed * Time.deltaTime);
 
         RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, .5f);
-        print(Physics2D.Raycast(groundDetection.position, Vector2.down, 2f).collider.name + "this should be hitting stuff");
         if (groundInfo.collider == false)
         {
             if (moveRight)
@@ -28,7 +27,7 @@ public class EnemyMovement : MonoBehaviour {
             }
             else
             {
-                transform.eulerAngles = new Vector3(0, -0, 0);
+                transform.eulerAngles = new Vector3(0, 0, 0);
                 moveRight = true;
             }
 
