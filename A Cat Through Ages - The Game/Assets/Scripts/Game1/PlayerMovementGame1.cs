@@ -31,7 +31,7 @@ public class PlayerMovementGame1 : MonoBehaviour
         {
             playerRgbd.velocity = Vector2.up * jumpVelocity;
         }
-        else
+        
         Move();
         
     }

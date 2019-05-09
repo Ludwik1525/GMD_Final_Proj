@@ -1,8 +1,11 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/lifel/Desktop/A Cat Through Ages - The Game.exe
+C:/Users/Rune/Desktop/Skole/GitHubRepos/GMD_Final_Proj/A Cat Through Ages - The Game/Build/A Cat Through Ages - The Game.exe
 SceneListBegin?
+Assets/Scenes/Game1.unity
 Assets/Scenes/Game2.unity
+Assets/Scenes/Game3.unity
+Assets/Scenes/Game4/Game4.unity
 SceneListEnd?
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.HairBall
 296699255e7d37d4d6f2968b3fb92f33 Assembly-CSharp.dll:.AmbientController
@@ -229,3 +232,12 @@ bfcd6d4f21f3dc90f591a7c271674575 Assembly-CSharp.dll:.GUIController
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.SetFPS
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.HealthBarHUDTester
 5b81907bc4ef177ce886ed93c1596fa3 Assembly-CSharp.dll:.GAME3_BearMovement
+6df45f79db095aa55254779aa5f95e9c Assembly-CSharp.dll:.Navigator2D
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.DelayedCollider
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.InitialisationScript
+6fd83abb88cab98a332452c1d829d861 Assembly-CSharp.dll:.Spawner
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.EnemyKilled
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.NextGameFunc
+da442342c0bde657301a97644c389e77 Assembly-CSharp.dll:.StartScript
+c1c102df6f7792bb253f0c96006d6118 Assembly-CSharp.dll:.ScoreScript
+f9a713fa4694ace3a4e8ea9c79724d64 Assembly-CSharp.dll:.LoseScript
