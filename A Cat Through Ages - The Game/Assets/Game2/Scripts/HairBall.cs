@@ -18,6 +18,10 @@ public class HairBall : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Trigger");
+        if (collision.gameObject.tag == "Enemy")
+        {
+            Destroy(collision.gameObject);
+        }
+        Destroy(gameObject);
     }
 }
