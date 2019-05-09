@@ -68,6 +68,7 @@ public class GAME3_GameManager : MonoBehaviour
 
     void Next()
     {
+        Time.timeScale = 1;
         coolstory.SetActive(false);
         startObject.SetActive(true);
     }
