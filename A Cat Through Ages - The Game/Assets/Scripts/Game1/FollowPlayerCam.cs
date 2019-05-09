@@ -27,14 +27,14 @@ public class FollowPlayerCam : MonoBehaviour {
     void LateUpdate()
     {
         // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
-        if(player.transform.position.y < -0.5f)
+        if(player.transform.position.y < -0.3f)
         {
             transform.position = new Vector3(player.transform.position.x + offset.x, -1.16f, -10);
 
         }
         if(player.transform.position.y > 0)
         {
-            transform.position = new Vector3(player.transform.position.x + offset.x, 1.27f, -10);
+            transform.position = new Vector3(player.transform.position.x + offset.x, 1.24f, -10);
         }
     }
 }
