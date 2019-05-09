@@ -19,8 +19,6 @@ public class MoveCat : MonoBehaviour, IMove {
 
     private MovingSpeed speed;
 
-    public event Action<Input> OnPlayerInput;
-
     void Start()
     {
         speed = new MovingSpeed();
@@ -167,10 +165,5 @@ public class MoveCat : MonoBehaviour, IMove {
 
         dataInJson = JsonUtility.ToJson(speed, false);
         File.WriteAllText(path, dataInJson);
-    }
-
-    public void Jump()
-    {
-        throw new NotImplementedException();
     }
 }
